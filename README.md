@@ -35,55 +35,96 @@
 ```json
 
 {
-    "name": "mout",
-    "description": "Modular Utilities",
-    "version": "1.0.0",
-    "homepage": "http://moutjs.com/",
-    "author": "Miller Medeiros <contact@millermedeiros.com> (http://blog.millermedeiros.com)",
+    "author": {
+        "name": "Miller Medeiros",
+        "url": "http://blog.millermedeiros.com"
+    },
+    "bugs": {
+        "url": "https://github.com/mout/mout/issues/"
+    },
     "contributors": [
-        "Adam Nowotny",
-        "André Cruz <amdfcruz@gmail.com>",
-        "Conrad Zimmerman (http://www.conradz.com)",
-        "Friedemann Altrock <frodenius@gmail.com>",
-        "Igor Almeida <igor.p.almeida@gmail.com>",
-        "Jarrod Overson (http://jarrodoverson.com)",
-        "Mathias Paumgarten <mail@mathias-paumgarten.com>",
-        "Zach Shipley"
+        {
+            "name": "Adam Nowotny"
+        },
+        {
+            "name": "André Cruz"
+        },
+        {
+            "name": "Conrad Zimmerman",
+            "url": "http://www.conradz.com"
+        },
+        {
+            "name": "Friedemann Altrock"
+        },
+        {
+            "name": "Igor Almeida"
+        },
+        {
+            "name": "Jarrod Overson",
+            "url": "http://jarrodoverson.com"
+        },
+        {
+            "name": "Mathias Paumgarten"
+        },
+        {
+            "name": "Zach Shipley"
+        }
     ],
+    "dependencies": {},
+    "description": "Modular Utilities",
+    "devDependencies": {
+        "commander": "~1.0.5",
+        "handlebars": "~1.0.6",
+        "istanbul": "~0.1.27",
+        "jasmine-node": "~1.14.5",
+        "jshint": "~2.9.1",
+        "mdoc": "~0.3.2",
+        "nodefy": "*",
+        "regenerate": "~0.5.4",
+        "requirejs": "~2.2.0",
+        "rimraf": "~2.5.2",
+        "rocambole": "~0.2.3"
+    },
+    "directories": {
+        "doc": "./doc"
+    },
+    "dist": {
+        "shasum": "9bdf1d4af57d66d47cb353a6335a3281098e1501",
+        "tarball": "https://registry.npmjs.org/mout/-/mout-1.0.0.tgz"
+    },
+    "gitHead": "2ff20539568bfe53b8c1da521cd743cf0ba79c2a",
+    "homepage": "http://moutjs.com/",
     "keywords": [
         "utilities",
         "functional",
         "amd-utils",
         "stdlib"
     ],
+    "license": "MIT",
+    "main": "./index.js",
+    "maintainers": [
+        {
+            "name": "millermedeiros"
+        },
+        {
+            "name": "satazor"
+        },
+        {
+            "name": "conradz"
+        },
+        {
+            "name": "mathias.paumgarten"
+        }
+    ],
+    "name": "mout",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git://github.com/mout/mout.git"
     },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/mout/mout/issues/"
-    },
-    "main": "./index.js",
     "scripts": {
         "pretest": "node build pkg",
         "test": "istanbul test tests/runner.js --hook-run-in-context"
-    },
-    "directories": {
-        "doc": "./doc"
-    },
-    "devDependencies": {
-        "istanbul": "~0.1.27",
-        "jasmine-node": "~1.14.5",
-        "requirejs": "~2.2.0",
-        "nodefy": "*",
-        "mdoc": "~0.3.2",
-        "handlebars": "~1.0.6",
-        "commander": "~1.0.5",
-        "rocambole": "~0.2.3",
-        "jshint": "~2.9.1",
-        "rimraf": "~2.5.2",
-        "regenerate": "~0.5.4"
     },
     "testling": {
         "preprocess": "node build testling",
@@ -126,7 +167,9 @@
             "tests/testling/specs.js",
             "tests/runner.js"
         ]
-    }
+    },
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
